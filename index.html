@@ -2,16 +2,10 @@
 <html lang="ja">
 
 <head>
-    <!-- 文字コード -->
     <meta charset="UTF-8">
-
-    <!-- スマホ表示の最適化 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- ページの説明（SEO用） -->
     <meta name="description" content="VTuberの創作・配信活動を総合的に支援するオンラインプロダクション「KUMAST（Kumano Live Streaming）」の公式サイトです。">
 
-    <!-- OGP -->
     <meta property="og:title" content="KUMAST公式サイト｜VTuberの創作・配信活動を総合支援するオンラインプロダクション">
     <meta property="og:description"
         content="VTuberの創作・配信活動を総合的に支援するオンラインプロダクション「KUMAST（Kumano Live Streaming）」の公式サイトです。">
@@ -20,203 +14,206 @@
     <meta property="og:image" content="https://kumast-official.github.io/kumast-site/images/ogp.jpg">
     <meta property="og:site_name" content="KUMAST">
 
-    <!-- Twitterカード（Xカード） -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="KUMAST公式サイト｜VTuberの創作・配信活動を総合支援するオンラインプロダクション">
     <meta name="twitter:description"
         content="VTuberの創作・配信活動を総合的に支援するオンラインプロダクション「KUMAST（Kumano Live Streaming）」の公式サイトです。">
     <meta name="twitter:image" content="https://kumast-official.github.io/kumast-site/images/ogp.jpg">
 
-    <!-- ファビコン -->
     <link rel="icon" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/favicon.png">
 
-    <!-- リセットCSS -->
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- メインCSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="style.css">
 
-    <!-- ページタイトル -->
     <title>KUMAST公式サイト｜VTuberの創作・配信活動を総合支援するオンラインプロダクション</title>
 </head>
 
 <body>
-    <!-- サイト共通ヘッダー -->
-    <header id="header" role="banner">
+
+    <!-- ローディング -->
+    <div id="loading">
+        <img src="images/logo.png" alt="KUMAST" class="loading-logo">
+        <div class="loading-trail"></div>
+    </div>
+
+    <!-- ヘッダー -->
+    <header id="header" class="header">
         <div class="header-inner">
-            <h1 class="logo">
+            <h1 class="header-logo">
                 <a href="./">
-                    <img src="images/logo.png" alt="KUMAST">
+                    <img src="images/logo.png" alt="KUMAST" class="header-logo-img">
                     <span class="visually-hidden">KUMAST公式サイト｜VTuberプロダクション</span>
                 </a>
             </h1>
 
-
-            <!-- ナビゲーション -->
-            <nav aria-label="メインナビゲーション">
-                <ul class="gnav">
+            <nav class="header-nav" id="global-nav" aria-label="メインナビゲーション">
+                <ul>
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#member">MEMBER</a></li>
                     <li><a href="#news">NEWS</a></li>
-                    <li><a href="#project">PROJECT</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
-        </div>
 
+            <button class="header-toggle" id="nav-toggle" aria-expanded="false" aria-controls="global-nav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
     </header>
 
-    <!-- メインコンテンツ -->
+    <div class="nav-overlay"></div>
+
     <main>
-        <!-- ヒーローエリア -->
-        <section id="hero" class="hero">
-            <img src="images/kumast-vtuber-production-hero.jpg" alt="KUMAST VTuberプロダクションのキービジュアル" loading="lazy">
-            <div class="hero-text">
-                <h2 class="hero-catch">VTuberが安心して活動できる、信頼の拠点。</h2>
-                <p>KUMAST（Kumano Live Streaming）公式サイト</p>
+
+        <!-- HERO -->
+<section class="hero">
+    <div class="hero-inner">
+
+        <img src="images/hero-logo.png" alt="KUMAST" class="hero-logo">
+
+        <h1 class="hero-title">
+            VTuberが安心して活動できる、信頼の拠点。
+        </h1>
+
+        <p class="hero-sub">KUMAST Official Site</p>
+
+        <a href="#about" class="more-btn">MORE</a>
+
+    </div>
+</section>
+
+
+
+
+        <!-- ABOUT -->
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title">ABOUT</h2>
+                <p class="section-lead">KUMASTについて</p>
+
+                <div class="about-text">
+                    <p>
+                        「KUMAST（Kumano Live Streaming）」は、<br>
+                        VTuberの創作・配信活動を総合的に応援する<br>
+                        オンラインプロダクションです。
+                    </p>
+
+                    <p>
+                        安心して創作と配信に向き合える環境を整え、<br>
+                        VTuberが自分らしく活動できる未来を目指します。
+                    </p>
+                    <a href="https://www.youtube.com/@KUMAST_official" class="more-btn">MORE</a>
+
+                </div>
             </div>
         </section>
 
-        <!-- KUMASTとは? -->
-        <section id="about">
-            <h2>ABOUT</h2>
-            <p class="section-lead">KUMASTについて</p>
-            <p>「KUMAST（Kumano Live Streaming）」は、VTuberの創作・配信活動を総合的に支援するオンラインプロダクションです。</p>
-            <p>安心して創作と配信に向き合える環境を整え、VTuberが自分らしく活動できる未来を目指します。</p>
+
+
         </section>
 
-        <!-- メンバー -->
+        <!-- MEMBER（JSON から自動生成） -->
         <section id="member">
-            <h2>MEMBER</h2>
-            <p class="section-lead">所属メンバー</p>
+            <div class="container">
+                <h2 class="section-title">MEMBER</h2>
+                <p class="section-lead">所属メンバー</p>
 
-            <ul class="member-list">
-                <li class="member-item">
-                    <article class="member-card" aria-labelledby="member-kumano-name">
-                        <div class="member-card__image">
-                            <img src="images/miyazawa-kumano-vtuber.jpg" alt="宮沢くまの" loading="lazy">
-                        </div>
+                <!-- ★ フィルター UI（ここが重要） -->
+                <div class="member-filter">
+                    <button data-filter="all" class="active">ALL</button>
+                    <button data-filter="gen1">1st Gen</button>
+                    <button data-filter="coming">準備中</button>
+                </div>
 
-                        <div class="member-card__body">
-                            <h3 id="member-kumano-name" class="member-card__name-ja">宮沢くまの</h3>
-                            <p class="member-card__name-en">Miyazawa Kumano</p>
-
-                            <ul class="member-card__bio">
-                                <li>BF中心に活動しているVTuber。</li>
-                                <li>背中で語るタイプのくま。</li>
-                                <li>性格は獰猛でプリンアラモードを喰らう。</li>
-                            </ul>
-
-                            <div class="member-card__links">
-                                <a href="https://www.youtube.com/@MiyazawaKumano">YouTube</a>
-                                <a href="https://x.com/miyazawakumano">X</a>
-                            </div>
-                        </div>
-                    </article>
-                </li>
-
-                <!-- ▼ メンバー追加時はこの li をコピペして、ul の中で一番下に追加する ▼ -->
-                <!--
-                <li class="member-item">
-                    <article class="member-card" aria-labelledby="member-xxxx-name">
-                        <div class="member-card__image">
-                            <img src="images/xxxx.jpg" alt="名前" loading="lazy">
-                        </div>
-
-                        <div class="member-card__body">
-                            <h3 id="member-xxxx-name" class="member-card__name-ja">名前（日本語）</h3>
-                            <p class="member-card__name-en">Name (English)</p>
-
-                            <ul class="member-card__bio">
-                                <li>プロフィール1</li>
-                                <li>プロフィール2</li>
-                                <li>プロフィール3</li>
-                            </ul>
-
-                            <div class="member-card__links">
-                                <a href="YouTubeURL">YouTube</a>
-                                <a href="XURL">X</a>
-                            </div>
-                        </div>
-                    </article>
-                </li>
-                -->
-
-            </ul>
+                <div class="section-inner">
+                    <ul class="member-list"></ul>
+                </div>
+            </div>
         </section>
 
-
-        <!-- ニュース -->
+        <!-- NEWS -->
         <section id="news">
-            <h2>NEWS</h2>
-            <p class="section-lead">最新情報</p>
+            <div class="container">
+                <h2 class="section-title">NEWS</h2>
+                <p class="section-lead">最新情報</p>
 
-            <!-- ▼ ニュース追加時はこの li をコピペして、最上部に追加する ▼ -->
-            <!--
-                <li class="news-item">
-                        <h3 class="news-text">ここにニュースタイトル</h3>
-                        <time class="news-date" datetime="YYYY-MM-DD">YYYY.MM.DD</time>
-                </li>
-                -->
+                <ul id="news-list" class="top-news-list"></ul>
+            </div>
 
-            <ul id="news-list" class="news-list">
-                <li class="news-item">
-                    <h3 class="news-text">KUMASTに宮沢くまのがメンバーとして加わりました。</h3>
-                    <time class="news-date" datetime="2026-02-04">2026.02.04</time>
-                </li>
-
-                <li class="news-item">
-                    <h3 class="news-text">KUMASTの公式Xアカウントを開設しました。</h3>
-                    <time class="news-date" datetime="2026-02-03">2026.02.03</time>
-                </li>
-
-                <li class="news-item">
-                    <h3 class="news-text">KUMASTのYouTubeチャンネルを開設しました。</h3>
-                    <time class="news-date" datetime="2026-02-02">2026.02.02</time>
-                </li>
-
-                <li class="news-item">
-                    <h3 class="news-text">KUMAST公式サイトを公開しました。</h3>
-                    <time class="news-date" datetime="2026-02-01">2026.02.01</time>
-                </li>
-            </ul>
+            <div style="text-align:center; margin-top:20px;">
+                <a href="news.html" class="more-btn">MORE</a>
+            </div>
         </section>
 
-        <!-- プロジェクト -->
-        <section id="project">
-            <h2>PROJECT</h2>
-            <p class="section-lead">サポート内容</p>
-            <ul>
-                <li>活動方針の相談・クリエイティブサポート</li>
-                <li>SNS運用・投稿内容のアドバイス</li>
-                <li>動画制作・サムネイル制作の支援</li>
-                <li>配信技術・機材環境のサポート</li>
-            </ul>
+<section id="contact">
+    <div class="container">
+        <h2 class="section-title">CONTACT</h2>
+        <p class="section-lead">お問い合わせ</p>
 
-        </section>
+<p class="contact-description">
+    KUMAST へのお問い合わせは、以下のフォームよりお送りください。
+</p>
 
-        <!-- お問い合わせ -->
-        <section id="contact">
-            <h2>CONTACT</h2>
-            <p class="section-lead">お問い合わせ</p>
-            <p>活動に関するご相談やお問い合わせを受け付けています。</p>
-            <p>ご連絡は以下のメールアドレスまでお願いいたします。</p>
-            <p><a href="mailto:kmast.official@gmail.com">kmast.official@gmail.com</a></p>
-        </section>
+<iframe
+    src="https://docs.google.com/forms/d/e/1FAIpQLSeJfDXC1JqJ-J3EA409N9pxkn4TlRSDs0029O-X4cOd4MPbAA/viewform?embedded=true&cachebuster=<?= Date.now() ?>"
+    width="100%"
+    height="900"
+    frameborder="0"
+    marginheight="0"
+    marginwidth="0">
+</iframe>
+
+    </div>
+</section>
+
 
     </main>
 
-    <!-- フッター -->
-    <footer id="footer">
-        <nav aria-label="フッターナビゲーション">
-            <ul class="footer-nav">
-                <li><a href="#contact">お問い合わせ</a></li>
-                <li><a href="policy.html">プライバシーポリシー</a></li>
+    <!-- FOOTER -->
+     <!-- ページトップへ戻るボタン -->
+<button id="pagetop" aria-label="ページトップへ戻る"></button>
+
+<footer class="footer">
+    <div class="footer-inner">
+
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="KUMAST">
+            </div>
+
+            <div class="footer-sns">
+                <a href="https://youtube.com/" class="icon-youtube" aria-label="YouTube"></a>
+                <a href="https://x.com/" class="icon-x" aria-label="X"></a>
+            </div>
+        </div>
+
+        <nav class="footer-links">
+            <ul>
+                <li><a href="index.html#contact">お問い合わせ</a></li>
+                <li><a href="privacy.html">プライバシーポリシー</a></li>
             </ul>
         </nav>
-        <p class="copyright">© KUMAST</p>
-    </footer>
+
+        <div class="footer-copy">
+            © <span id="year"></span> KUMAST
+        </div>
+
+    </div>
+</footer>
+
+</footer>
+
+
+
+<!-- JS -->
+<script src="js/loading.js"></script>
+<script src="js/header.js"></script>
+<script src="js/news.js"></script>
+<script src="js/member.js"></script>
+<script src="js/footer.js"></script>
 
 </body>
 
