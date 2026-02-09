@@ -1,1 +1,43 @@
+[
+    {
+        "id": "kumano",
+        "name_ja": "宮沢くまの",
+        "name_en": "Miyazawa Kumano",
+        "image": "images/miyazawa-kumano.png",
+        "catch": "BF6（Battlefield 6 ）中心に活動しているVTuber。背中で語るタイプのくま。性格は獰猛でプリンアラモードを喰らう。",
+        "category": "gen1",
+        "page": "https://www.youtube.com/@MiyazawaKumano",
+        "links": {
+            "youtube": "https://www.youtube.com/@MiyazawaKumano",
+            "x": "https://x.com/miyazawakumano"
+        }
+    },
 
+    {
+        "id": "miina-kanji",
+        "name_ja": "準備中",
+        "name_en": "Coming Soon",
+        "image": "images/dummy-member.png",
+        "catch": "現在準備中のメンバーです。続報をお待ちください。",
+        "category": "coming",
+        "page": "https://www.youtube.com/@KUMAST_official",
+        "links": {
+            "youtube": "https://www.youtube.com/@KUMAST_official",
+            "x": "https://x.com/miyazawakumano"
+        }
+    },
+
+    {
+        "id": "tba-03",
+        "name_ja": "準備中",
+        "name_en": "Coming Soon",
+        "image": "images/dummy-member.png",
+        "catch": "現在準備中のメンバーです。続報をお待ちください。",
+        "category": "coming",
+        "page": "https://www.youtube.com/@KUMAST_official",
+        "links": {
+            "youtube": "https://www.youtube.com/@KUMAST_official",
+            "x": "https://x.com/miyazawakumano"
+        }
+    }
+]
