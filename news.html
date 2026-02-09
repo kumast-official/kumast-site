@@ -15,25 +15,26 @@
 
 <body>
 
+    <!-- ヘッダー -->
     <header id="header" class="header">
         <div class="header-inner">
             <h1 class="header-logo">
                 <a href="./">
                     <img src="images/logo.png" alt="KUMAST" class="header-logo-img">
+                    <span class="visually-hidden">KUMAST公式サイト｜VTuberプロダクション</span>
                 </a>
             </h1>
 
-            <nav class="header-nav" id="global-nav">
+            <nav class="header-nav" id="global-nav" aria-label="メインナビゲーション">
                 <ul>
-                    <li><a href="index.html#about">ABOUT</a></li>
-                    <li><a href="index.html#member">MEMBER</a></li>
-                    <li><a href="index.html#news">NEWS</a></li>
-                    <li><a href="index.html#project">PROJECT</a></li>
-                    <li><a href="index.html#contact">CONTACT</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#member">MEMBER</a></li>
+                    <li><a href="#news">NEWS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
 
-            <button class="header-toggle" id="nav-toggle">
+            <button class="header-toggle" id="nav-toggle" aria-expanded="false" aria-controls="global-nav">
                 <span></span><span></span><span></span>
             </button>
         </div>
@@ -53,19 +54,46 @@
         </section>
     </main>
 
-    <footer id="footer">
-        <nav>
-            <ul class="footer-nav">
-                <li><a href="index.html#contact">お問い合わせ</a></li>
-                <li><a href="policy.html">プライバシーポリシー</a></li>
-            </ul>
-        </nav>
-        <p class="copyright">© KUMAST</p>
+    <!-- FOOTER -->
+    <!-- ページトップへ戻るボタン -->
+    <button id="pagetop" aria-label="ページトップへ戻る"></button>
+
+    <footer class="footer">
+        <div class="footer-inner">
+
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="KUMAST">
+                </div>
+
+                <div class="footer-sns">
+                    <a href="https://youtube.com/" class="icon-youtube" aria-label="YouTube"></a>
+                    <a href="https://x.com/" class="icon-x" aria-label="X"></a>
+                </div>
+            </div>
+
+            <nav class="footer-links">
+                <ul>
+                    <li><a href="index.html#contact">お問い合わせ</a></li>
+                    <li><a href="privacy.html">プライバシーポリシー</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-copy">
+                © <span id="year"></span> KUMAST
+            </div>
+
+        </div>
     </footer>
+
+    </footer>
+
 
     <!-- JS -->
     <script src="js/header.js"></script>
     <script src="js/news-all.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
 
 </body>
 

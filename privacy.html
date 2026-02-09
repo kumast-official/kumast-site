@@ -9,73 +9,37 @@
     <link rel="stylesheet" href="style.css">
     <title>プライバシーポリシー｜KUMAST</title>
 
-    <style>
-        /* ================================
-           プライバシーポリシー専用スタイル
-        ================================= */
-        .policy-main {
-            padding-top: 120px; /* 固定ヘッダー分の余白 */
-        }
-
-        .policy-section h2 {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 24px;
-            text-align: center;
-        }
-
-        .policy-section h3 {
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-top: 40px;
-            margin-bottom: 12px;
-            color: #333;
-        }
-
-        .policy-section p {
-            font-size: 1rem;
-            line-height: 1.9;
-            color: #444;
-            margin-bottom: 14px;
-        }
-
-        .policy-section a {
-            color: var(--color-logo-blue);
-            text-decoration: underline;
-        }
-
-        @media (max-width: 768px) {
-            .policy-main {
-                padding-top: 100px;
-            }
-            .policy-section h2 {
-                font-size: 1.7rem;
-            }
-            .policy-section h3 {
-                font-size: 1.2rem;
-            }
-        }
-    </style>
 </head>
 
 <body>
 
-    <!-- ================================
-         ヘッダー（トップページと統一）
-    ================================= -->
+    <!-- ヘッダー -->
     <header id="header" class="header">
         <div class="header-inner">
             <h1 class="header-logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="KUMAST">
+                <a href="./">
+                    <img src="images/logo.png" alt="KUMAST" class="header-logo-img">
+                    <span class="visually-hidden">KUMAST公式サイト｜VTuberプロダクション</span>
                 </a>
             </h1>
+
+            <nav class="header-nav" id="global-nav" aria-label="メインナビゲーション">
+                <ul>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#member">MEMBER</a></li>
+                    <li><a href="#news">NEWS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <button class="header-toggle" id="nav-toggle" aria-expanded="false" aria-controls="global-nav">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </header>
 
-    <!-- ================================
-         メイン
-    ================================= -->
+    <div class="nav-overlay"></div>
+
     <main class="policy-main" role="main">
         <section id="policy" class="policy-section">
             <div class="section-inner">
@@ -157,6 +121,7 @@
     </footer>
 
     </footer>
+    <script src="js/header.js"></script>
     <script src="js/footer.js"></script>
 </body>
 
