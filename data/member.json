@@ -12,7 +12,6 @@
             "x": "https://x.com/miyazawakumano"
         }
     },
-
     {
         "id": "miina-kanji",
         "name_ja": "準備中",
@@ -23,10 +22,9 @@
         "page": "https://www.youtube.com/@KUMAST_official",
         "links": {
             "youtube": "https://www.youtube.com/@KUMAST_official",
-            "x": "https://x.com/miyazawakumano"
+            "x": "https://x.com/KUMAST_official"
         }
     },
-
     {
         "id": "tba-03",
         "name_ja": "準備中",
@@ -37,7 +35,7 @@
         "page": "https://www.youtube.com/@KUMAST_official",
         "links": {
             "youtube": "https://www.youtube.com/@KUMAST_official",
-            "x": "https://x.com/miyazawakumano"
+            "x": "https://x.com/KUMAST_official"
         }
     }
 ]
