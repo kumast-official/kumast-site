@@ -858,6 +858,11 @@ section {
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
 }
 
+.news-more {
+  text-align: center;
+  margin-top: 20px;
+}
+
 /* ================================
    SNSアイコン（YouTube / X）
 ================================ */
