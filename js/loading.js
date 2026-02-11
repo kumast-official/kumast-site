@@ -1,27 +1,16 @@
-/* ================================
-   KUMAST Brand Awakening
-   ロゴ浮上 → バウンド → カーブ吸い込み
-   → 光の尾 → ヘッダー点灯 → 背景フェード
-================================ */
+// =====================================
+// シンプルなローディング演出
+// =====================================
 window.addEventListener("load", () => {
     const loading = document.getElementById("loading");
-    const loadingLogo = document.querySelector(".loading-logo");
-    const trail = document.querySelector(".loading-trail");
-    const headerLogo = document.querySelector(".header-logo-img");
+    const logo = document.querySelector(".loading-logo");
 
-    // 1) ロゴ吸い込み開始（カーブ軌道）
-    setTimeout(() => {
-        loadingLogo.classList.add("shrink");
-        trail.classList.add("active");
-    }, 700);
+    // ロゴをフェードイン＆スケールアップ
+    logo?.classList.add("animate");
 
-    // 2) ローディング背景フェードアウト
+    // ローディングを非表示に（1.2秒後）
     setTimeout(() => {
-        loading.classList.add("hide");
-    }, 1500);
-
-    // 3) ヘッダーロゴを点灯（ポンッ）
-    setTimeout(() => {
-        headerLogo.classList.add("glow");
-    }, 1600);
+        loading?.classList.add("hide");
+    }, 1200);
 });
+
