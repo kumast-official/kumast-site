@@ -115,3 +115,21 @@ const handleResize = debounce(() => {
 }, 200);
 
 window.addEventListener("resize", handleResize);
+
+// =====================================
+// ページ遷移後にアンカー位置へスクロール（#contactなど）
+// =====================================
+window.addEventListener("DOMContentLoaded", () => {
+  const hash = window.location.hash;
+  if (hash) {
+    const target = document.querySelector(hash);
+    if (target) {
+      // 少し遅らせてスクロール（ヘッダー分の高さを考慮）
+      setTimeout(() => {
+        const headerHeight = header.offsetHeight || 80;
+        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+        window.scrollTo({ top: targetPosition, behavior: "smooth" });
+      }, 100);
+    }
+  }
+});
