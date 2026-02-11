@@ -2,53 +2,102 @@
 <html lang="ja">
 
 <head>
+    <!-- 基本設定 -->
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-language" content="ja">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="VTuberの創作・配信活動を総合的に支援するオンラインプロダクション「KUMAST（Kumano Live Streaming）」の公式サイトです。">
+    <title>KUMAST公式サイト｜VTuberの創作・配信活動を応援するオンラインプロダクション</title>
+    <meta name="description" content="VTuberの創作・配信活動を応援するオンラインプロダクション「KUMAST（Kumano Live Streaming）」の公式サイトです。">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="KUMAST">
 
-    <meta property="og:title" content="KUMAST公式サイト｜VTuberの創作・配信活動を総合支援するオンラインプロダクション">
-    <meta property="og:description"
-        content="VTuberの創作・配信活動を総合的に支援するオンラインプロダクション「KUMAST（Kumano Live Streaming）」の公式サイトです。">
+    <!-- パフォーマンス最適化 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- フォント -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- スタイルシート -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ファビコン -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="images/apple-favicon.png">
+
+    <!-- OGP設定 -->
+    <meta property="og:locale" content="ja_JP">
     <meta property="og:type" content="website">
+    <meta property="og:title" content="KUMAST公式サイト｜VTuberの創作・配信活動を応援するオンラインプロダクション">
+    <meta property="og:description" content="VTuberの創作・配信活動を応援するオンラインプロダクション「KUMAST（Kumano Live Streaming）」の公式サイトです。">
     <meta property="og:url" content="https://kumast-official.github.io/kumast-site/">
     <meta property="og:image" content="https://kumast-official.github.io/kumast-site/images/ogp.jpg">
     <meta property="og:site_name" content="KUMAST">
 
+    <!-- Twitterカード -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="KUMAST公式サイト｜VTuberの創作・配信活動を総合支援するオンラインプロダクション">
     <meta name="twitter:description"
         content="VTuberの創作・配信活動を総合的に支援するオンラインプロダクション「KUMAST（Kumano Live Streaming）」の公式サイトです。">
     <meta name="twitter:image" content="https://kumast-official.github.io/kumast-site/images/ogp.jpg">
 
-    <link rel="icon" href="images/favicon.png">
-    <link rel="apple-touch-icon" href="images/apple-favicon.png">
+    <!-- SEO -->
+    <link rel="canonical" href="https://kumast-official.github.io/kumast-site/">
+    <meta name="theme-color" content="#1a1a1a">
 
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <link rel="stylesheet" href="style.css">
-
-    <title>KUMAST公式サイト｜VTuberの創作・配信活動を総合支援するオンラインプロダクション</title>
+    <!-- 構造化データ -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "KUMAST",
+    "url": "https://kumast-official.github.io/kumast-site/",
+    "logo": "https://kumast-official.github.io/kumast-site/images/logo.png",
+    "sameAs": [
+        "https://x.com/KUMAST_official",
+        "https://www.youtube.com/@KUMAST_official"
+    ],
+    "description": "VTuberの創作・配信活動を応援するオンラインプロダクション",
+    "foundingDate": "2026-01-01",
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSeJfDXC1JqJ-J3EA409N9pxkn4TlRSDs0029O-X4cOd4MPbAA/viewform",
+        "availableLanguage": ["ja"]
+        }
+    }
+    </script>
 </head>
 
 <body>
 
-    <!-- ローディング -->
+    <!-- ================================
+    ローディング画面
+    ================================= -->
     <div id="loading">
         <img src="images/logo.png" alt="KUMAST" class="loading-logo">
         <div class="loading-trail"></div>
     </div>
 
-    <!-- ヘッダー -->
+    <!-- ================================
+    ヘッダー
+    ================================= -->
     <header id="header" class="header">
         <div class="header-inner">
+
+            <!-- サイトロゴ（トップページへのリンク） -->
             <h1 class="header-logo">
                 <a href="./">
                     <img src="images/logo.png" alt="KUMAST" class="header-logo-img">
+                    <!-- 視覚的には非表示。スクリーンリーダー用にサイト名を提供 -->
                     <span class="visually-hidden">KUMAST公式サイト｜VTuberプロダクション</span>
                 </a>
             </h1>
 
+            <!-- グローバルナビゲーション -->
             <nav class="header-nav" id="global-nav" aria-label="メインナビゲーション">
                 <ul>
                     <li><a href="#about">ABOUT</a></li>
@@ -58,162 +107,200 @@
                 </ul>
             </nav>
 
+            <!-- ハンバーガーメニュー（モバイル用ナビ開閉ボタン） -->
             <button class="header-toggle" id="nav-toggle" aria-expanded="false" aria-controls="global-nav">
                 <span></span><span></span><span></span>
             </button>
+
         </div>
     </header>
 
+    <!-- ナビゲーション開閉時に表示される背景オーバーレイ -->
     <div class="nav-overlay"></div>
 
     <main>
 
-        <!-- HERO -->
-<section class="hero">
-    <div class="hero-inner">
+        <!-- ================================
+        HEROセクション
+        ================================= -->
+        <section class="hero">
+            <div class="hero-inner">
 
-        <img src="images/hero-logo.png" alt="KUMAST" class="hero-logo">
+                <!-- メインロゴ（ビジュアル用） -->
+                <img src="images/hero-logo.png" alt="KUMAST" class="hero-logo">
 
-        <h1 class="hero-title">
-            VTuberが安心して活動できる、信頼の拠点。
-        </h1>
+                <!-- キャッチコピー -->
+                <h1 class="hero-title">
+                    VTuberが安心して活動できる、信頼の拠点。
+                </h1>
 
-        <p class="hero-sub">KUMAST Official Site</p>
+                <!-- サブタイトル -->
+                <p class="hero-sub">KUMAST Official Site</p>
 
-        <a href="#about" class="more-btn">MORE</a>
+                <!-- MOREボタン -->
+                <a href="#about" class="more-btn">MORE</a>
 
-    </div>
-</section>
+            </div>
+        </section>
 
-
-
-
-        <!-- ABOUT -->
+        <!-- ================================
+        ABOUTセクション
+        ================================= -->
         <section id="about">
             <div class="container">
+
+                <!-- セクションタイトル -->
                 <h2 class="section-title">ABOUT</h2>
+
+                <!-- リード文 -->
                 <p class="section-lead">KUMASTについて</p>
 
+                <!-- 紹介テキスト -->
                 <div class="about-text">
                     <p>
                         「KUMAST（Kumano Live Streaming）」は、<br>
                         VTuberの創作・配信活動を総合的に応援する<br>
                         オンラインプロダクションです。
                     </p>
-
                     <p>
                         安心して創作と配信に向き合える環境を整え、<br>
                         VTuberが自分らしく活動できる未来を目指します。
                     </p>
-                    <a href="#member" class="more-btn">MORE</a>
 
+                    <!-- MOREボタン -->
+                    <a href="#member" class="more-btn">MORE</a>
                 </div>
+
             </div>
         </section>
 
-
-
-        </section>
-
-        <!-- MEMBER（JSON から自動生成） -->
+        <!-- ================================
+        MEMBERセクション
+        ================================= -->
         <section id="member">
             <div class="container">
+
+                <!-- セクションタイトル -->
                 <h2 class="section-title">MEMBER</h2>
+
+                <!-- リード文 -->
                 <p class="section-lead">所属メンバー</p>
 
-                <!-- ★ フィルター UI（ここが重要） -->
-                <div class="member-filter">
-                    <button data-filter="all" class="active">ALL</button>
-                    <button data-filter="gen1">1st Gen</button>
-                    <button data-filter="coming">準備中</button>
+                <!-- メンバーフィルター（世代・状態で絞り込み） -->
+                <div class="member-filter" role="group" aria-label="メンバーフィルター">
+                    <button data-filter="all" class="active" aria-pressed="true">ALL</button>
+                    <button data-filter="gen1" aria-pressed="false">1st Gen</button>
+                    <button data-filter="coming" aria-pressed="false">準備中</button>
                 </div>
 
+                <!-- メンバーリスト（JSで動的に生成） -->
                 <div class="section-inner">
-                    <ul class="member-list"></ul>
+                    <ul class="member-list" role="list"></ul>
                 </div>
+
             </div>
         </section>
 
-        <!-- NEWS -->
+
+        <!-- ================================
+        NEWSセクション
+        ================================= -->
         <section id="news">
             <div class="container">
+
+                <!-- セクションタイトル -->
                 <h2 class="section-title">NEWS</h2>
+
+                <!-- リード文 -->
                 <p class="section-lead">最新情報</p>
 
-                <ul id="news-list" class="top-news-list"></ul>
+                <!-- ニュースリスト（JSで動的に生成） -->
+                <ul id="news-list" class="top-news-list" role="list" aria-live="polite"></ul>
+
             </div>
 
-            <div style="text-align:center; margin-top:20px;">
-                <a href="news.html" class="more-btn">MORE</a>
+            <!-- MOREボタン -->
+            <div class="news-more">
+                <a href="news.html" class="more-btn" aria-label="NEWS一覧ページへ移動">MORE</a>
             </div>
         </section>
 
-<section id="contact">
-    <div class="container">
-        <h2 class="section-title">CONTACT</h2>
-        <p class="section-lead">お問い合わせ</p>
 
-<p class="contact-description">
-    KUMAST へのお問い合わせは、以下のフォームよりお送りください。
-</p>
+        <!-- ================================
+        CONTACTセクション
+        ================================= -->
+        <section id="contact">
+            <div class="container">
 
-<iframe
-    src="https://docs.google.com/forms/d/e/1FAIpQLSeJfDXC1JqJ-J3EA409N9pxkn4TlRSDs0029O-X4cOd4MPbAA/viewform?embedded=true&cachebuster=<?= Date.now() ?>"
-    width="100%"
-    height="900"
-    frameborder="0"
-    marginheight="0"
-    marginwidth="0">
-</iframe>
+                <!-- セクションタイトル -->
+                <h2 class="section-title">CONTACT</h2>
 
-    </div>
-</section>
+                <!-- リード文 -->
+                <p class="section-lead">お問い合わせ</p>
 
+                <!-- フォームの説明文 -->
+                <p class="contact-description">
+                    KUMAST へのお問い合わせは、以下のフォームよりお送りください。
+                </p>
+
+                <!-- Googleフォーム埋め込み -->
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSeJfDXC1JqJ-J3EA409N9pxkn4TlRSDs0029O-X4cOd4MPbAA/viewform?embedded=true"
+                    width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0" title="KUMASTお問い合わせフォーム"
+                    loading="lazy" aria-label="KUMASTへのお問い合わせフォーム">
+                </iframe>
+
+            </div>
+        </section>
 
     </main>
 
-    <!-- FOOTER -->
-     <!-- ページトップへ戻るボタン -->
-<button id="pagetop" aria-label="ページトップへ戻る"></button>
+    <!-- ページトップへ戻るボタン -->
+    <button id="pagetop" aria-label="ページトップへ戻る"></button>
 
-<footer class="footer">
-    <div class="footer-inner">
+    <!-- ================================
+    フッター
+    ================================= -->
+    <footer class="footer">
+        <div class="footer-inner">
 
-        <div class="footer-top">
-            <div class="footer-logo">
-                <img src="images/logo.png" alt="KUMAST">
+            <div class="footer-top">
+
+                <!-- サイトロゴ -->
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="KUMAST">
+                </div>
+
+                <!-- SNSリンク -->
+                <div class="footer-sns">
+                    <a href="https://youtube.com/" class="icon-youtube" aria-label="YouTube"></a>
+                    <a href="https://x.com/" class="icon-x" aria-label="X（旧Twitter）"></a>
+                </div>
+
             </div>
 
-            <div class="footer-sns">
-                <a href="https://youtube.com/" class="icon-youtube" aria-label="YouTube"></a>
-                <a href="https://x.com/" class="icon-x" aria-label="X"></a>
+            <!-- フッターナビゲーション -->
+            <nav class="footer-links" aria-label="フッターナビゲーション">
+                <ul>
+                    <li><a href="#contact">お問い合わせ</a></li>
+                    <li><a href="privacy.html">プライバシーポリシー</a></li>
+                </ul>
+            </nav>
+
+            <!-- コピーライト -->
+            <div class="footer-copy">
+                © <span id="year"></span> KUMAST
             </div>
+
         </div>
+    </footer>
 
-        <nav class="footer-links">
-            <ul>
-                <li><a href="#contact">お問い合わせ</a></li>
-                <li><a href="privacy.html">プライバシーポリシー</a></li>
-            </ul>
-        </nav>
-
-        <div class="footer-copy">
-            © <span id="year"></span> KUMAST
-        </div>
-
-    </div>
-</footer>
-
-</footer>
-
-
-
-<!-- JS -->
-<script src="js/loading.js"></script>
-<script src="js/header.js"></script>
-<script src="js/news.js"></script>
-<script src="js/member.js"></script>
-<script src="js/footer.js"></script>
+    <!-- JavaScript 読み込み -->
+    <script src="js/loading.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/news.js"></script>
+    <script src="js/member.js"></script>
+    <script src="js/footer.js"></script>
 
 </body>
 

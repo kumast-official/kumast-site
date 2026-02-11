@@ -2,27 +2,70 @@
 <html lang="ja">
 
 <head>
+    <!-- 基本設定 -->
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-language" content="ja">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プライバシーポリシー｜KUMAST</title>
     <meta name="description" content="KUMASTのプライバシーポリシーおよび個人情報保護方針を掲載しています。">
+    <meta name="robots" content="noindex, follow">
+    <meta name="author" content="KUMAST Production">
+
+    <!-- パフォーマンス最適化 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- フォント -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- スタイルシート -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>プライバシーポリシー｜KUMAST</title>
 
+    <!-- ファビコン -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="images/apple-favicon.png">
+
+    <!-- OGP設定 -->
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="プライバシーポリシー｜KUMAST">
+    <meta property="og:description" content="KUMASTのプライバシーポリシーおよび個人情報保護方針を掲載しています。">
+    <meta property="og:url" content="https://kumast-official.github.io/kumast-site/privacy.html">
+    <meta property="og:image" content="https://kumast-official.github.io/kumast-site/images/ogp.jpg">
+    <meta property="og:site_name" content="KUMAST">
+
+    <!-- Twitterカード -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="プライバシーポリシー｜KUMAST">
+    <meta name="twitter:description" content="KUMASTのプライバシーポリシーおよび個人情報保護方針を掲載しています。">
+    <meta name="twitter:image" content="https://kumast-official.github.io/kumast-site/images/ogp.jpg">
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://kumast-official.github.io/kumast-site/privacy.html">
+    <meta name="theme-color" content="#1a1a1a">
 </head>
 
 <body>
 
-    <!-- ヘッダー -->
+    <!-- ================================
+    ヘッダー
+    ================================= -->
     <header id="header" class="header">
         <div class="header-inner">
+
+            <!-- サイトロゴ（トップページへのリンク） -->
             <h1 class="header-logo">
                 <a href="./">
                     <img src="images/logo.png" alt="KUMAST" class="header-logo-img">
+                    <!-- 視覚的には非表示。スクリーンリーダー用にサイト名を提供 -->
                     <span class="visually-hidden">KUMAST公式サイト｜VTuberプロダクション</span>
                 </a>
             </h1>
 
+            <!-- グローバルナビゲーション -->
             <nav class="header-nav" id="global-nav" aria-label="メインナビゲーション">
                 <ul>
                     <li><a href="index.html#about">ABOUT</a></li>
@@ -32,15 +75,22 @@
                 </ul>
             </nav>
 
+            <!-- ハンバーガーメニュー（モバイル用ナビ開閉ボタン） -->
             <button class="header-toggle" id="nav-toggle" aria-expanded="false" aria-controls="global-nav">
                 <span></span><span></span><span></span>
             </button>
+
         </div>
     </header>
 
+    <!-- ナビゲーション開閉時に表示される背景オーバーレイ -->
     <div class="nav-overlay"></div>
 
     <main class="policy-main" role="main">
+
+        <!-- ================================
+    プライバシーポリシーセクション
+    ================================= -->
         <section id="policy" class="policy-section">
             <div class="section-inner">
 
@@ -86,31 +136,39 @@
         </section>
     </main>
 
-    <!-- FOOTER -->
     <!-- ページトップへ戻るボタン -->
     <button id="pagetop" aria-label="ページトップへ戻る"></button>
 
+    <!-- ================================
+    フッター
+    ================================= -->
     <footer class="footer">
         <div class="footer-inner">
 
             <div class="footer-top">
+
+                <!-- サイトロゴ -->
                 <div class="footer-logo">
                     <img src="images/logo.png" alt="KUMAST">
                 </div>
 
+                <!-- SNSリンク -->
                 <div class="footer-sns">
                     <a href="https://youtube.com/" class="icon-youtube" aria-label="YouTube"></a>
-                    <a href="https://x.com/" class="icon-x" aria-label="X"></a>
+                    <a href="https://x.com/" class="icon-x" aria-label="X（旧Twitter）"></a>
                 </div>
+
             </div>
 
-            <nav class="footer-links">
+            <!-- フッターナビゲーション -->
+            <nav class="footer-links" aria-label="フッターナビゲーション">
                 <ul>
                     <li><a href="index.html#contact">お問い合わせ</a></li>
                     <li><a href="privacy.html">プライバシーポリシー</a></li>
                 </ul>
             </nav>
 
+            <!-- コピーライト -->
             <div class="footer-copy">
                 © <span id="year"></span> KUMAST
             </div>
@@ -118,11 +176,10 @@
         </div>
     </footer>
 
-    </footer>
-
-    </footer>
+    <!-- JavaScript 読み込み -->
     <script src="js/header.js"></script>
     <script src="js/footer.js"></script>
+
 </body>
 
 </html>
